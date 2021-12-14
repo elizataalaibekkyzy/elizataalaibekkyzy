@@ -1,0 +1,72 @@
+<Data>
+    <Date>
+        <A1>11.12.2021</A1>
+        <A2>12.12.2021</A2>
+        <A3>16.11.2021</A3>
+        <A4>11.12.2021</A4>
+        <A5>12.12.2021</A5>
+        <A6>16.11.2021</A6>
+        <A7>11.12.2021</A7>
+        <A8>12.12.2021</A8>
+        <A9>16.11.2021</A9>
+        <A10>11.12.2021</A10>
+        <A11>12.12.2021</A11>
+        <A12>16.11.2021</A12>
+    </Date>
+    <Time>
+        <B1>00:50:33</B1>
+        <B2>12:50:33 </B2>
+        <B3>07:29:59 </B3>
+        <B4>00:50:33</B4>
+        <B5>12:50:33 </B5>
+        <B6>07:29:59 </B6>
+        <B7>00:50:33</B7>
+        <B8>12:50:33 </B8>
+        <B9>07:29:59 </B9>
+        <B10>00:50:33</B10>
+        <B11>12:50:33 </B11>
+        <B12>07:29:59 </B12>
+    </Time>
+    <Speed>
+        <C1>26.599999999999998 kn</C1>
+        <C2>106.39999999999999 kn</C2>
+        <C3>70.3 kn</C3>
+        <C4>26.599999999999998 kn</C4>
+        <C5>106.39999999999999 kn</C5>
+        <C6>22.799999999999997 kn</C6>
+        <C7>32.3 kn</C7>
+        <C8>49.4 kn</C8>
+        <C9>47.5 kn</C9>
+        <C10>32.3 kn</C10>
+        <C11>49.4 kn</C11>
+        <C12>237.5 kn</C12>
+    </Speed>
+    <Distance>
+        <D1>6.21371 miles</D1>
+        <D2>86.370569 miles</D2>
+        <D3>55.92339 miles</D3>
+        <D4>6.21371 miles</D4>
+        <D5>86.370569 miles</D5>
+        <D6>55.92339 miles</D6>
+        <D7>6.21371 miles</D7>
+        <D8>86.370569 miles</D8>
+        <D9>55.92339 miles</D9>
+        <D10>6.21371 miles</D10>
+        <D11>86.370569 miles</D11>
+        <D12>55.92339 miles</D12>
+    </Distance>
+    <Description>
+        <E1>dummy Description</E1>
+        <E2>dummy Description</E2>
+        <E3>dummy Description</E3>
+        <E4>dummy Description</E4>
+        <E5>dummy Description</E5>
+        <E6>dummy Description</E6>
+        <E7>dummy Description</E7>
+        <E8>dummy Description</E8>
+        <E9>dummy Description</E9>
+        <E10>dummy Description</E10>
+        <E11>dummy Description</E11>
+        <E12>dummy Description</E12>
+    </Description>
+</Data>

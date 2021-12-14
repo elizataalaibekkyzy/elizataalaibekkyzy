@@ -3,6 +3,7 @@ from tkinter import filedialog;
 import datetime;
 import csv;
 import sys,os;
+import xml.etree.cElementTree as ET;
 
 dir = os.path.dirname(__file__)
 
@@ -70,6 +71,7 @@ class Project:
                     else:
                         self._desc_list.append(val.strip())
         self._store_data_into_csv()
+        self._store_data_into_xml()
         pass
     
     def _check_date_pattern(self, date):
@@ -151,6 +153,58 @@ class Project:
                 writer.writerow(row)
         pass
 
+    def _store_data_into_xml(self):
+
+        timestamp = self._get_timestamp()
+        filename = timestamp + '.xml'
+        filepath = os.path.join(dir, 'genereted_files', filename)
+        
+        root = ET.Element("Data")
+        date = ET.Element("Date")
+        root.append (date)
+        idx = 1
+        for item in self._date_list:
+            curr_itm = ET.SubElement(date, "A{0}".format(idx))
+            curr_itm.text = item
+            idx += 1
+        
+        time = ET.Element("Time")
+        root.append (time)
+        idx = 1
+        for item in self._time_list:
+            curr_itm = ET.SubElement(time, "B{0}".format(idx))
+            curr_itm.text = item
+            idx += 1
+        
+        speed = ET.Element("Speed")
+        root.append (speed)
+        idx = 1
+        for item in self._speed_list:
+            curr_itm = ET.SubElement(speed, "C{0}".format(idx))
+            curr_itm.text = item
+            idx += 1
+        
+        dist = ET.Element("Distance")
+        root.append (dist)
+        idx = 1
+        for item in self._dist_list:
+            curr_itm = ET.SubElement(dist, "D{0}".format(idx))
+            curr_itm.text = item
+            idx += 1
+        
+        desc = ET.Element("Description")
+        root.append (desc)
+        idx = 1
+        for item in self._desc_list:
+            curr_itm = ET.SubElement(desc, "E{0}".format(idx))
+            curr_itm.text = item
+            idx += 1
+        
+        tree = ET.ElementTree(root)
+        
+        with open(filepath, 'wb') as file:
+            tree.write(file)
+        pass
 
 if __name__ == '__main__':
     window = Tk()
